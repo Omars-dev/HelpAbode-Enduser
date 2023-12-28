@@ -306,7 +306,7 @@ body {
     align-content: center;
     gap: 4px;
     width: 100%;
-    margin-top: 36px;
+    margin-top: 24px;
 }
 .scendary-category img{
     height: 46px;
@@ -346,7 +346,7 @@ body {
 /* Category Header */
 .product-cat-box{
     width: 100%;
-    padding: 50px 64px;
+    padding: 20px 0px;
     position: relative;
 }
 .product-cat-content-box{
@@ -438,7 +438,7 @@ body {
 
 .product-image {
     width: 100%;
-    height: 170px;
+    height: 180px;
     border-radius: 10px;
     /* Your other image styles */
 }
@@ -505,7 +505,7 @@ body {
     align-items: center;
     align-content: center;
     gap: 4px;
-    margin: 50px 64px;
+    margin: 20px 64px;
     background: var(--category-bg);
     height: 350px;
     align-items: center;
