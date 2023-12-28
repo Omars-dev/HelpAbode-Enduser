@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,324 +9,325 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!-- Header -->
-<div class="header">
-    <!-- Hamburger Menu -->
-    <div class="hamburger">
-        <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
-    </div>
-    
-    <!-- Logo -->
-    <img src="assets/images/svg/logo.svg" alt="Logo" class="logo">
-    
-    <!-- Location -->
-    <div class="location" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-        <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
-        <span>775 Waterville Drive</span>
-        <span class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
-    </div>
-    
-    <!-- Search Bar -->
-    <div class="search-bar-container">
-        <span class="search-icon" id="searchIcon">
-            <img src="assets/images/svg/Search.svg" alt="">
-        </span>
-        <input type="text" placeholder="Search" class="search-bar" id="searchInput">
-    </div>
-    
-    <div class="actions d-flex gap-3">
-        <!-- Notification Icon -->
-        <div class="notification">
-            <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+    <!-- Header -->
+    <div class="header">
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
         </div>
-        
-        <!-- Cart -->
-        <div class="cart">
-            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
-            <span>0 Carts</span>
-        </div>
-    </div>
-</div>
 
-<section class="main-body">
-    <!-- Main category -->
-    <div class="main-category">
-        <div class="category-box1">
-            <span>
-                <img src="assets/images/icons/floorCleaning.png" alt="">
+        <!-- Logo -->
+        <img src="assets/images/svg/logo.svg" alt="Logo" class="logo">
+
+        <!-- Location -->
+        <div class="location" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>775 Waterville Drive</span>
+            <span class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <span class="search-icon" id="searchIcon">
+                <img src="assets/images/svg/Search.svg" alt="">
             </span>
-            <span class="title">Floor Cleaning</span>
+            <input type="text" placeholder="Search" class="search-bar" id="searchInput">
         </div>
 
-        <div class="category-box1">
-            <span>
-                <img src="assets/images/icons/carWash.png" alt="">
-            </span>
-            <span class="title">Car Wash</span>
-        </div>
-
-        <div class="category-box1">
-            <span>
-                <img src="assets/images/icons/houseClean.png" alt="">
-            </span>
-            <span class="title">House Cleaning</span>
-        </div>
-
-        <div class="category-box1">
-            <span>
-                <img src="assets/images/icons/landscaping.png" alt="">
-            </span>
-            <span class="title">Landscaping</span>
-        </div>
-
-        <div class="category-box1">
-            <span>
-                <img src="assets/images/icons/carpetCleaning.png" alt="">
-            </span>
-            <span class="title">Carpet Cleaning</span>
-        </div>
-
-        <div class="category-box1">
-            <span>
-                <img src="assets/images/icons/swimming-pool.svg" alt="">
-            </span>
-            <span class="title">Swimming Pool</span>
-        </div>
-    </div>
-    <!-- end main category -->
-
-    <!-- secondary category -->
-    <div class="scendary-category">
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/phoneRepair.png" alt="">
-            <p class="title">Phone Repair</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/computerRepair.png" alt="">
-            <p class="title">Computer Repair</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/plumbing.png" alt="">
-            <p class="title">Plumbing</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/pestControl.png" alt="">
-            <p class="title">Pest Control</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/airConditioning.png" alt="">
-            <p class="title">Air Conditioning</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/heating.png" alt="">
-            <p class="title">Heating</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/handyman.svg" alt="">
-            <p class="title">Appliance Repair</p>
-        </div>
-
-        <div class="sec-category-box1">
-            <img src="assets/images/icons/handy.svg" alt="">
-            <p class="title">Handyman</p>
-        </div>
-    </div>
-    <!-- end sec category -->
-
-    <!-- Promotional Banner -->
-    <!-- secondary category -->
-    <div class="promotional-bannner">
-        <div class="banner-title">
-            <h1>Team Member Message</h1>
-        </div>
-    </div>
-    <!-- end sec category -->
-    <!-- end -->
-
-
-    <!-- start product card category 1 -->
-    <div class="container product-cat-box">
-        <!-- Category Header -->
-        <div class="category-header">
-            <div class="category-title">Need Category Title</div>
-            <div class="view-all">
-                <span class="view-all-text">View All</span>
-                <div class="prev-next-buttons">
-                    <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
-                    <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Product Cards -->
-        <div class="row product-cat-content-box">
-            <div class="col-4">
-                <div class="product-card">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="actions d-flex gap-3">
+            <!-- Notification Icon -->
+            <div class="notification">
+                <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
             </div>
 
-            <div class="col-4">
-                <div class="product-card">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Cart -->
+            <div class="cart">
+                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                <span>0 Carts</span>
             </div>
-
-            <div class="col-4">
-                <div class="product-card">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Repeat the above product card for the next two products -->
-            
         </div>
     </div>
 
-    <!-- end -->
+    <section class="main-body">
+        <!-- Main category -->
+        <div class="main-category">
+            <div class="category-box1">
+                <span>
+                    <img src="assets/images/icons/floorCleaning.png" alt="">
+                </span>
+                <span class="title">Floor Cleaning</span>
+            </div>
 
-    <!-- start product card category 2 -->
-    <div class="container product-cat-box">
-        <!-- Category Header -->
-        <div class="category-header">
-            <div class="category-title">Need Category Title</div>
-            <div class="view-all">
-                <span class="view-all-text">View All</span>
-                <div class="prev-next-buttons">
-                    <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
-                    <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
-                </div>
+            <div class="category-box1">
+                <span>
+                    <img src="assets/images/icons/carWash.png" alt="">
+                </span>
+                <span class="title">Car Wash</span>
+            </div>
+
+            <div class="category-box1">
+                <span>
+                    <img src="assets/images/icons/houseClean.png" alt="">
+                </span>
+                <span class="title">House Cleaning</span>
+            </div>
+
+            <div class="category-box1">
+                <span>
+                    <img src="assets/images/icons/landscaping.png" alt="">
+                </span>
+                <span class="title">Landscaping</span>
+            </div>
+
+            <div class="category-box1">
+                <span>
+                    <img src="assets/images/icons/carpetCleaning.png" alt="">
+                </span>
+                <span class="title">Carpet Cleaning</span>
+            </div>
+
+            <div class="category-box1">
+                <span>
+                    <img src="assets/images/icons/swimming-pool.svg" alt="">
+                </span>
+                <span class="title">Swimming Pool</span>
             </div>
         </div>
-    
-        <!-- Product Cards -->
-        <div class="row product-cat-content-box">
-            <div class="col-3">
-                <div class="product-card-box4">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1  for this service</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- end main category -->
+
+        <!-- secondary category -->
+        <div class="scendary-category">
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/phoneRepair.png" alt="">
+                <p class="title">Phone Repair</p>
             </div>
 
-            <div class="col-3">
-                <div class="product-card-box4">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/computerRepair.png" alt="">
+                <p class="title">Computer Repair</p>
             </div>
 
-            <div class="col-3">
-                <div class="product-card-box4">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/plumbing.png" alt="">
+                <p class="title">Plumbing</p>
+            </div>              
+
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/pestControl.png" alt="">
+                <p class="title">Pest Control</p>
             </div>
 
-            <div class="col-3">
-                <div class="product-card-box4">
-                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
-                    <div class="favorite-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">Need Product Title 1</div>
-                        <div class="product-rating">
-                            <span class="product-price">$120.0</span>
-                            <div class="rating">
-                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/airConditioning.png" alt="">
+                <p class="title">Air Conditioning</p>
             </div>
-    
-            <!-- Repeat the above product card for the next two products -->
-            
+
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/heating.png" alt="">
+                <p class="title">Heating</p>
+            </div>
+
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/handyman.svg" alt="">
+                <p class="title">Appliance Repair</p>
+            </div>
+
+            <div class="sec-category-box1" onclick="rotateImage(this)">
+                <img src="assets/images/icons/handy.svg" alt="">
+                <p class="title">Handyman</p>
+            </div>
         </div>
-    </div>
+        <!-- end sec category -->
 
-    <!-- end -->
+        <!-- Promotional Banner -->
+        <!-- secondary category -->
+        <div class="promotional-bannner">
+            <div class="banner-title">
+                <h1>Team Member Message</h1>
+            </div>
+        </div>
+        <!-- end sec category -->
+        <!-- end -->
 
 
-    <!-- locations modal -->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- start product card category 1 -->
+        <div class="container product-cat-box">
+            <!-- Category Header -->
+            <div class="category-header">
+                <div class="category-title">Need Category Title</div>
+                <div class="view-all">
+                    <span class="view-all-text">View All</span>
+                    <div class="prev-next-buttons">
+                        <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                        <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="row product-cat-content-box">
+                <div class="col-4">
+                    <div class="product-card">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="product-card">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="product-card">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat the above product card for the next two products -->
+
+            </div>
+        </div>
+
+        <!-- end -->
+
+        <!-- start product card category 2 -->
+        <div class="container product-cat-box">
+            <!-- Category Header -->
+            <div class="category-header">
+                <div class="category-title">Need Category Title</div>
+                <div class="view-all">
+                    <span class="view-all-text">View All</span>
+                    <div class="prev-next-buttons">
+                        <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                        <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="row product-cat-content-box">
+                <div class="col-3">
+                    <div class="product-card-box4">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="product-card-box4">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="product-card-box4">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="product-card-box4">
+                        <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">Need Product Title 1</div>
+                            <div class="product-rating">
+                                <span class="product-price">$120.0</span>
+                                <div class="rating">
+                                    <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat the above product card for the next two products -->
+
+            </div>
+        </div>
+
+        <!-- end -->
+
+
+        <!-- locations modal -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -378,9 +380,9 @@
           </div>
         </div>
       </div> -->
-    
-      <!-- address details -->
-      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <!-- address details -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -417,9 +419,9 @@
           </div>
         </div>
       </div> -->
-      
-      <!-- adjust pin -->
-      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <!-- adjust pin -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -442,134 +444,139 @@
           </div>
         </div>
       </div> -->
-      
-      <!-- saved address -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h1>Addresses</h1>
-                <div class="search-bar-container w-100 rounded">
-                    <span class="search-icon" id="searchIcon">
-                        <img src="assets/images/svg/Search.svg" alt="">
-                    </span>
-                    <input type="text" placeholder="Search" class="search-bar" id="searchInput">
-                </div>
-                
-            </div>
-            <div class="addresses mb-4">
-                <div class="address-item d-flex justify-content-between align-items-center bg-light py-3 px-3">
-                    <div class="left d-flex align-items-center gap-3">
-                        <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt=""></div>
-                        <div class="address-details">
-                            <div class="address-header">775 Waterville Drive</div>
-                            <div class="address-description">Brentwood, CA 94513, USA</div>
+
+        <!-- saved address -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Addresses</h1>
+                        <div class="search-bar-container w-100 rounded">
+                            <span class="search-icon" id="searchIcon">
+                                <img src="assets/images/svg/Search.svg" alt="">
+                            </span>
+                            <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+                        </div>
+
+                    </div>
+                    <div class="addresses mb-4">
+                        <div class="address-item d-flex justify-content-between align-items-center bg-light py-3 px-3">
+                            <div class="left d-flex align-items-center gap-3">
+                                <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt="">
+                                </div>
+                                <div class="address-details">
+                                    <div class="address-header">775 Waterville Drive</div>
+                                    <div class="address-description">Brentwood, CA 94513, USA</div>
+                                </div>
+                            </div>
+                            <div class="action-btn d-flex gap-2">
+                                <span class="bg-white px-2 py-1 rounded-circle"><img
+                                        src="./assets/images/icons/menu-icons/edit.svg" alt=""></span>
+                                <span class="bg-white px-2 py-1 rounded-circle"><img
+                                        src="./assets/images/icons/menu-icons/delete.svg" alt=""></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="action-btn d-flex gap-2">
-                        <span class="bg-white px-2 py-1 rounded-circle"><img src="./assets/images/icons/menu-icons/edit.svg" alt=""></span>
-                        <span class="bg-white px-2 py-1 rounded-circle"><img src="./assets/images/icons/menu-icons/delete.svg" alt=""></span>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-sections">
-            <!-- Footer Section 1 -->
-            <div class="footer-section">
-                <h4>Footer Section 1</h4>
-                <ul>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li><a href="#">Option 3</a></li>
-                    <li><a href="#">Option 4</a></li>
-                    <li><a href="#">Option 5</a></li>
-                    <li><a href="#">Option 6</a></li>
-                    <li><a href="#">Option 7</a></li>
-                    <li><a href="#">Option 8</a></li>
-                </ul>
-            </div>
-
-            <!-- Footer Section 2 -->
-            <div class="footer-section">
-                <h4>Footer Section 2</h4>
-                <ul>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li><a href="#">Option 3</a></li>
-                    <li><a href="#">Option 4</a></li>
-                    <li><a href="#">Option 5</a></li>
-                    <li><a href="#">Option 6</a></li>
-                    <li><a href="#">Option 7</a></li>
-                    <li><a href="#">Option 8</a></li>
-                </ul>
-            </div>
-
-            <!-- Footer Section 3 -->
-            <div class="footer-section">
-                <h4>Footer Section 3</h4>
-                <ul>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li><a href="#">Option 3</a></li>
-                    <li><a href="#">Option 4</a></li>
-                    <li><a href="#">Option 5</a></li>
-                    <li><a href="#">Option 6</a></li>
-                    <li><a href="#">Option 7</a></li>
-                    <li><a href="#">Option 8</a></li>
-                </ul>
-            </div>
-
-            <!-- Footer Section 4 -->
-            <div class="footer-section">
-                <h4>Footer Section 4</h4>
-                <ul>
-                    <li>About: </li>
-                    <li>Contact:</li>
-                    <li>Address:</li>
-                </ul>
-                <div class="download-options">
-                    <div class="app-store">
-                        <img src="assets/images/icons/app-store.png" alt="Google Play Download">
-                    </div>
-                    <div class="play">
-                        <img src="assets/images/icons/google-play.png" alt="App Store Download">
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-nav">
-            <a href="">Terms of Service</a>
-            <a href="">Privacy Policy</a>
-            <a href="">California Policy</a>
-            <a href="">Do not Sell or Share My PersonL info</a>
-            <a href="">© 2023 HelpAbode</a>
-        </div>
-    </footer>
-    </footer>
-
-    
-    
+        <!-- end -->
 
 
-</section>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-sections">
+                <!-- Footer Section 1 -->
+                <div class="footer-section">
+                    <h4>Footer Section 1</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 2 -->
+                <div class="footer-section">
+                    <h4>Footer Section 2</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 3 -->
+                <div class="footer-section">
+                    <h4>Footer Section 3</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 4 -->
+                <div class="footer-section">
+                    <h4>Footer Section 4</h4>
+                    <ul>
+                        <li>About: </li>
+                        <li>Contact:</li>
+                        <li>Address:</li>
+                    </ul>
+                    <div class="download-options">
+                        <div class="app-store">
+                            <img src="assets/images/icons/app-store.png" alt="Google Play Download">
+                        </div>
+                        <div class="play">
+                            <img src="assets/images/icons/google-play.png" alt="App Store Download">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">California Policy</a>
+                <a href="">Do not Sell or Share My PersonL info</a>
+                <a href="">© 2023 HelpAbode</a>
+            </div>
+        </footer>
+        </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-<script>
-    // document.getElementById('searchIcon').addEventListener('click', function () {
-    //     document.getElementById('searchInput').classList.add('search-active');
-    // });
-</script>
+
+
+
+    </section>
+
+    <script>
+        function rotateImage(element) {
+          const imgElement = element.querySelector('img');
+          imgElement.classList.toggle('rotated');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

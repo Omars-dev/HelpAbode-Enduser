@@ -18,6 +18,7 @@
     --placeholder: #767676;
     --rating-star: #E3B700;
     --input-hint-text: #535151;
+    --banner-bg: #7CB4C5;
     --font-family: 'Inter', sans-serif;
 }
 
@@ -186,7 +187,9 @@ body {
 }
 /* 27 Dec 23 end */
 
-
+.banner{
+    background: var(--banner-bg);
+}
 
 
 /* Search bar container styles */
@@ -318,12 +321,23 @@ body {
     line-height: normal;
 }
 .sec-category-box1{
+    position: relative; 
+    cursor: pointer;
     display: flex;
     padding: 8px;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
+.sec-category-box1 img{
+    transition: all 0.3s;
+}
+.sec-category-box1:hover img{
+    transform: rotate(15deg);
+}
+.sec-category-box1:active img {
+    transform: scale(1.6);
+  }
 
 /* Promotional Banner */
 .promotional-banner{
@@ -383,8 +397,8 @@ body {
 }
 
 .prev-next-button {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: #d9d9d9;
     display: flex;
@@ -575,3 +589,6 @@ body {
     margin-right: 0;
 }
 
+.rotated {
+    transform: rotate(15deg);
+}
