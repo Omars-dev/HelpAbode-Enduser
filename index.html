@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Abode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <!-- Hamburger Menu -->
+    <div class="hamburger">
+        <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+    </div>
+    
+    <!-- Logo -->
+    <img src="assets/images/svg/logo.svg" alt="Logo" class="logo">
+    
+    <!-- Location -->
+    <div class="location" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+        <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+        <span>775 Waterville Drive</span>
+        <span class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+        <span class="search-icon" id="searchIcon">
+            <img src="assets/images/svg/Search.svg" alt="">
+        </span>
+        <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+    </div>
+    
+    <div class="actions d-flex gap-3">
+        <!-- Notification Icon -->
+        <div class="notification">
+            <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+        </div>
+        
+        <!-- Cart -->
+        <div class="cart">
+            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+            <span>0 Carts</span>
+        </div>
+    </div>
+</div>
+
+<section class="main-body">
+    <!-- Main category -->
+    <div class="main-category">
+        <div class="category-box1">
+            <span>
+                <img src="assets/images/icons/floorCleaning.png" alt="">
+            </span>
+            <span class="title">Floor Cleaning</span>
+        </div>
+
+        <div class="category-box1">
+            <span>
+                <img src="assets/images/icons/carWash.png" alt="">
+            </span>
+            <span class="title">Car Wash</span>
+        </div>
+
+        <div class="category-box1">
+            <span>
+                <img src="assets/images/icons/houseClean.png" alt="">
+            </span>
+            <span class="title">House Cleaning</span>
+        </div>
+
+        <div class="category-box1">
+            <span>
+                <img src="assets/images/icons/landscaping.png" alt="">
+            </span>
+            <span class="title">Landscaping</span>
+        </div>
+
+        <div class="category-box1">
+            <span>
+                <img src="assets/images/icons/carpetCleaning.png" alt="">
+            </span>
+            <span class="title">Carpet Cleaning</span>
+        </div>
+
+        <div class="category-box1">
+            <span>
+                <img src="assets/images/icons/swimming-pool.svg" alt="">
+            </span>
+            <span class="title">Swimming Pool</span>
+        </div>
+    </div>
+    <!-- end main category -->
+
+    <!-- secondary category -->
+    <div class="scendary-category">
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/phoneRepair.png" alt="">
+            <p class="title">Phone Repair</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/computerRepair.png" alt="">
+            <p class="title">Computer Repair</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/plumbing.png" alt="">
+            <p class="title">Plumbing</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/pestControl.png" alt="">
+            <p class="title">Pest Control</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/airConditioning.png" alt="">
+            <p class="title">Air Conditioning</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/heating.png" alt="">
+            <p class="title">Heating</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/handyman.svg" alt="">
+            <p class="title">Appliance Repair</p>
+        </div>
+
+        <div class="sec-category-box1">
+            <img src="assets/images/icons/handy.svg" alt="">
+            <p class="title">Handyman</p>
+        </div>
+    </div>
+    <!-- end sec category -->
+
+    <!-- Promotional Banner -->
+    <!-- secondary category -->
+    <div class="promotional-bannner">
+        <div class="banner-title">
+            <h1>Team Member Message</h1>
+        </div>
+    </div>
+    <!-- end sec category -->
+    <!-- end -->
+
+
+    <!-- start product card category 1 -->
+    <div class="container product-cat-box">
+        <!-- Category Header -->
+        <div class="category-header">
+            <div class="category-title">Need Category Title</div>
+            <div class="view-all">
+                <span class="view-all-text">View All</span>
+                <div class="prev-next-buttons">
+                    <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                    <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Product Cards -->
+        <div class="row product-cat-content-box">
+            <div class="col-4">
+                <div class="product-card">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="product-card">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="product-card">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Repeat the above product card for the next two products -->
+            
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- start product card category 2 -->
+    <div class="container product-cat-box">
+        <!-- Category Header -->
+        <div class="category-header">
+            <div class="category-title">Need Category Title</div>
+            <div class="view-all">
+                <span class="view-all-text">View All</span>
+                <div class="prev-next-buttons">
+                    <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                    <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Product Cards -->
+        <div class="row product-cat-content-box">
+            <div class="col-3">
+                <div class="product-card-box4">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="product-card-box4">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="product-card-box4">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="product-card-box4">
+                    <img src="assets/images/services/car-wash.png" alt="Product 1" class="product-image">
+                    <div class="favorite-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">Need Product Title 1</div>
+                        <div class="product-rating">
+                            <span class="product-price">$120.0</span>
+                            <div class="rating">
+                            <span class="rating-text">4.8 <i class="fas fa-star star-icon"></i> (20+)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Repeat the above product card for the next two products -->
+            
+        </div>
+    </div>
+
+    <!-- end -->
+
+
+    <!-- locations modal -->
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Addresses</h1>
+                <div class="search-bar-container w-100 rounded">
+                    <span class="search-icon" id="searchIcon">
+                        <img src="assets/images/svg/Search.svg" alt="">
+                    </span>
+                    <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+                </div>
+                
+            </div>
+            <div class="addresses mb-4">
+                <div class="address-item d-flex justify-content-between align-items-center bg-light py-3 px-3">
+                    <div class="left d-flex align-items-center gap-3">
+                        <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt=""></div>
+                        <div class="address-details">
+                            <div class="address-header">775 Waterville Drive</div>
+                            <div class="address-description">Brentwood, CA 94513, USA</div>
+                        </div>
+                    </div>
+                    <div class="next"><img src="./assets/images/icons/menu-icons/right-arrow.svg" alt=""></div>
+                </div>
+
+                <div class="address-item d-flex justify-content-between align-items-center py-3 px-3">
+                    <div class="left d-flex align-items-center gap-3">
+                        <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt=""></div>
+                        <div class="address-details">
+                            <div class="address-header">775 Waterville Drive</div>
+                            <div class="address-description">Brentwood, CA 94513, USA</div>
+                        </div>
+                    </div>
+                    <div class="next"><img src="./assets/images/icons/menu-icons/right-arrow.svg" alt=""></div>
+                </div>
+
+                <div class="address-item d-flex justify-content-between align-items-center py-3 px-3">
+                    <div class="left d-flex align-items-center gap-3">
+                        <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt=""></div>
+                        <div class="address-details">
+                            <div class="address-header">775 Waterville Drive</div>
+                            <div class="address-description">Brentwood, CA 94513, USA</div>
+                        </div>
+                    </div>
+                    <div class="next"><img src="./assets/images/icons/menu-icons/right-arrow.svg" alt=""></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+      <!-- address details -->
+      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close btn-back" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Addresses</h1>
+              <div class="address-item d-flex justify-content-between align-items-center py-2">
+                <div class="left d-flex align-items-center gap-3">
+                    <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt=""></div>
+                    <div class="address-details">
+                        <div class="address-header">775 Waterville Drive</div>
+                        <div class="address-description">Brentwood, CA 94513, USA</div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="map-area my-3">
+                    <iframe class="h-auto w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35605.19819573514!2d-121.71272254740794!3d37.928453164470504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff999f087c8cd%3A0x7e19835b56d29a02!2sBrentwood%2C%20CA%2094513%2C%20USA!5e0!3m2!1sen!2suk!4v1703673063656!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="adjust-pin">
+                        <img src="./assets/images/icons/menu-icons/adjust-pin.svg" alt="">
+                    </div>
+                </div>
+                <div class="form-group d-inline-block w-100 mb-3">
+                    <label for="apt">Apartment / Suite</label>
+                    <input type="text" class="form-control mt-2 custom-input px-3 py-2 rounded-3" id="apt" placeholder="Enter your apartment / suite / floor">
+                </div>
+                <div class="form-group d-inline-block w-100">
+                    <label for="apt">Entry Code</label>
+                    <input type="text" class="form-control mt-2 custom-input px-3 py-2 rounded-3" id="apt" placeholder="Enter entry code">
+                </div>
+                <div class="submit-btn"><button class="btn btn-success rounded-pill w-100 mt-4 mb-2">Save Address</button></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- adjust pin -->
+      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close btn-back" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Adjust Pin</h1>
+
+                <div class="map-area adjust-area my-3">
+                    <iframe class=" w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35605.19819573514!2d-121.71272254740794!3d37.928453164470504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff999f087c8cd%3A0x7e19835b56d29a02!2sBrentwood%2C%20CA%2094513%2C%20USA!5e0!3m2!1sen!2suk!4v1703673063656!5m2!1sen!2suk" width="600" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="adjust-pin">
+                        <img src="./assets/images/icons/menu-icons/pin.svg" alt="">
+                    </div>
+                </div>
+                <div class="submit-btn d-flex gap-3">
+                    <button class="btn btn-light text-black rounded-pill w-100 mb-2">Cancel</button>
+                    <button class="btn btn-success rounded-pill w-100 mb-2">Save</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+      <!-- saved address -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Addresses</h1>
+                <div class="search-bar-container w-100 rounded">
+                    <span class="search-icon" id="searchIcon">
+                        <img src="assets/images/svg/Search.svg" alt="">
+                    </span>
+                    <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+                </div>
+                
+            </div>
+            <div class="addresses mb-4">
+                <div class="address-item d-flex justify-content-between align-items-center bg-light py-3 px-3">
+                    <div class="left d-flex align-items-center gap-3">
+                        <div class="map-icon"><img src="./assets/images/icons/menu-icons/location.svg" alt=""></div>
+                        <div class="address-details">
+                            <div class="address-header">775 Waterville Drive</div>
+                            <div class="address-description">Brentwood, CA 94513, USA</div>
+                        </div>
+                    </div>
+                    <div class="action-btn d-flex gap-2">
+                        <span class="bg-white px-2 py-1 rounded-circle"><img src="./assets/images/icons/menu-icons/edit.svg" alt=""></span>
+                        <span class="bg-white px-2 py-1 rounded-circle"><img src="./assets/images/icons/menu-icons/delete.svg" alt=""></span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-sections">
+            <!-- Footer Section 1 -->
+            <div class="footer-section">
+                <h4>Footer Section 1</h4>
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                    <li><a href="#">Option 5</a></li>
+                    <li><a href="#">Option 6</a></li>
+                    <li><a href="#">Option 7</a></li>
+                    <li><a href="#">Option 8</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Section 2 -->
+            <div class="footer-section">
+                <h4>Footer Section 2</h4>
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                    <li><a href="#">Option 5</a></li>
+                    <li><a href="#">Option 6</a></li>
+                    <li><a href="#">Option 7</a></li>
+                    <li><a href="#">Option 8</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Section 3 -->
+            <div class="footer-section">
+                <h4>Footer Section 3</h4>
+                <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                    <li><a href="#">Option 5</a></li>
+                    <li><a href="#">Option 6</a></li>
+                    <li><a href="#">Option 7</a></li>
+                    <li><a href="#">Option 8</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Section 4 -->
+            <div class="footer-section">
+                <h4>Footer Section 4</h4>
+                <ul>
+                    <li>About: </li>
+                    <li>Contact:</li>
+                    <li>Address:</li>
+                </ul>
+                <div class="download-options">
+                    <div class="app-store">
+                        <img src="assets/images/icons/app-store.png" alt="Google Play Download">
+                    </div>
+                    <div class="play">
+                        <img src="assets/images/icons/google-play.png" alt="App Store Download">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">California Policy</a>
+            <a href="">Do not Sell or Share My PersonL info</a>
+            <a href="">© 2023 HelpAbode</a>
+        </div>
+    </footer>
+    </footer>
+
+    
+    
+
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script>
+    // document.getElementById('searchIcon').addEventListener('click', function () {
+    //     document.getElementById('searchInput').classList.add('search-active');
+    // });
+</script>
+
+</body>
+</html>
