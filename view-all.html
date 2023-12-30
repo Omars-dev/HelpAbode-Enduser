@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Abode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <!-- Logo -->
+        <img src="assets/images/svg/logo.svg" alt="Logo" class="logo">
+
+        <!-- Location -->
+        <div class="location" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>775 Waterville Drive</span>
+            <span class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <span class="search-icon" id="searchIcon">
+                <img src="assets/images/svg/Search.svg" alt="">
+            </span>
+            <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+        </div>
+
+        <div class="actions d-flex gap-3">
+            <!-- Notification Icon -->
+            <div class="notification">
+                <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                <span>0 Carts</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-body">
+
+        <div class="category-banner position-relative">
+            <div class="favorite d-flex gap-2 align-items-center px-3 py-2 bg-white rounded-pill position-absolute">
+                <i class="fa-regular fa-heart"></i>
+                <span>Save</span>
+            </div>
+            <img src="./assets/images/services/computer-repair.jpg" alt="">
+        </div>
+
+        <div class="container view-all-category-section d-flex" style="margin: 24px 64px;">
+            <div class="left-section col-3">
+                <div class="left-sec-details">
+                    <div class="details">
+                        <h1>iPhone repair</h1>
+                    </div>
+                    <div class="description">
+                        Need details, Need details, Need details, Need details,Need details, Need details
+                    </div>
+                </div>
+                <hr class="my-3">
+                <div class="table-of-content">
+                    <ul class="ps-0 list-unstyled">
+                        <li class="bg-light active featured-link"><a href="#featured" class="text-decoration-none text-dark">Featured services</a></li>
+                        <li class="featured-link"><a href="" class="text-decoration-none text-dark">Popular services</a></li>
+                        <li class="featured-link"><a href="" class="text-decoration-none text-dark">What's new</a></li>
+                        <li class="featured-link"><a href="" class="text-decoration-none text-dark">Bundle</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-section col-9 ps-4">
+                <div class="promotional-banner bg-light mb-4" style="height: 90px;border-radius: 12px;">
+                    <div class="carousel">
+                        <div class="slider1">
+                            <img src="./" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- featured section -->
+                <div class="featured-product-list">
+                    <!-- controller -->
+                    <div class="view-all d-flex justify-content-between align-items-center mb-3">
+                        <div class="category-title" id="featured">Need Category Title</div>
+                        <div class="prev-next-buttons">
+                            <span class="view-all-text">
+                                <a href="view-all.html" class=" text-decoration-none text-dark">View All</a>
+                            </span>
+                            <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                            <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                        </div>
+                    </div>
+                    <!-- Product Cards -->
+                    <div class="featured-products" style="width: 100%; height: 100%; overflow: scroll hidden; display: flex; gap: 12px;">
+                        <div class="featured-products-card d-flex flex-column flex-start gap-2 bg-white position-relative"
+                            style="width: 180px; border-radius: 10px; border: 2px solid #f6f6f6;">
+                            <img src="assets/images/services/car-wash.png" alt="Product 1" class="" style="border-top-right-radius: 10px;border-top-left-radius: 10px; height: 139px;">
+                            <!-- add to cart -->
+                            <div class="add-to-cart bg-white rounded-circle d-flex justify-content-center align-items-center" style="position: absolute; bottom: 50px; width: 36px;height:36px; bottom: 84px; right:8px;">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <span class="fs-4">+</span>
+                                </a>
+                            </div>
+                            <!-- most liked -->
+                            <div class="most-liked px-3" style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; background: #D5E7E0;">
+                                # Most Liked
+                            </div>
+                            <!-- info -->
+                            <div class="product-details my-2 px-2">
+                                <div class="product-title">Need Product Title 1</div>
+                                <div class="product-rating">
+                                    <span class="product-price" style="font-size: 14px;">$120.0+</span>
+                                    <div class="rating">
+                                        <span class="rating-text"><i class="fa-regular fa-thumbs-up"></i>
+                                            <span>87%</span> (20+)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-products-card d-flex flex-column flex-start gap-2 bg-white position-relative"
+                            style="width: 180px; border-radius: 10px; border: 2px solid #f6f6f6;">
+                            <img src="assets/images/services/car-wash.png" alt="Product 1" class="" style="border-top-right-radius: 10px;border-top-left-radius: 10px; height: 139px;">
+                            <!-- add to cart -->
+                            <div class="add-to-cart bg-white rounded-circle d-flex justify-content-center align-items-center" style="position: absolute; bottom: 50px; width: 36px;height:36px; bottom: 100px; right:24px;">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <span class="fs-4">+</span>
+                                </a>
+                            </div>
+                            <!-- most liked -->
+                            <div class="most-liked bg-warning px-3" style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px;">
+                                # Most Liked
+                            </div>
+                            <!-- info -->
+                            <div class="product-details my-2 px-2">
+                                <div class="product-title">Need Product Title 1</div>
+                                <div class="product-rating">
+                                    <span class="product-price" style="font-size: 14px;">$120.0+</span>
+                                    <div class="rating">
+                                        <span class="rating-text"><i class="fa-regular fa-thumbs-up"></i>
+                                            <span>87%</span> (20+)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-products-card d-flex flex-column flex-start gap-2 bg-white position-relative"
+                            style="width: 180px; border-radius: 10px; border: 2px solid #f6f6f6;">
+                            <img src="assets/images/services/car-wash.png" alt="Product 1" class="" style="border-top-right-radius: 10px;border-top-left-radius: 10px; height: 139px;">
+                            <!-- add to cart -->
+                            <div class="add-to-cart bg-white rounded-circle d-flex justify-content-center align-items-center" style="position: absolute; bottom: 50px; width: 36px;height:36px; bottom: 100px; right:24px;">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <span class="fs-4">+</span>
+                                </a>
+                            </div>
+                            <!-- most liked -->
+                            <div class="most-liked bg-warning px-3" style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px;">
+                                # Most Liked
+                            </div>
+                            <!-- info -->
+                            <div class="product-details my-2 px-2">
+                                <div class="product-title">Need Product Title 1</div>
+                                <div class="product-rating">
+                                    <span class="product-price" style="font-size: 14px;">$120.0+</span>
+                                    <div class="rating">
+                                        <span class="rating-text"><i class="fa-regular fa-thumbs-up"></i>
+                                            <span>87%</span> (20+)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-products-card d-flex flex-column flex-start gap-2 bg-white position-relative"
+                            style="width: 180px; border-radius: 10px; border: 2px solid #f6f6f6;">
+                            <img src="assets/images/services/car-wash.png" alt="Product 1" class="" style="border-top-right-radius: 10px;border-top-left-radius: 10px; height: 139px;">
+                            <!-- add to cart -->
+                            <div class="add-to-cart bg-white rounded-circle d-flex justify-content-center align-items-center" style="position: absolute; bottom: 50px; width: 36px;height:36px; bottom: 100px; right:24px;">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <span class="fs-4">+</span>
+                                </a>
+                            </div>
+                            <!-- most liked -->
+                            <div class="most-liked bg-warning px-3" style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px;">
+                                # Most Liked
+                            </div>
+                            <!-- info -->
+                            <div class="product-details my-2 px-2">
+                                <div class="product-title">Need Product Title 1</div>
+                                <div class="product-rating">
+                                    <span class="product-price" style="font-size: 14px;">$120.0+</span>
+                                    <div class="rating">
+                                        <span class="rating-text"><i class="fa-regular fa-thumbs-up"></i>
+                                            <span>87%</span> (20+)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-products-card d-flex flex-column flex-start gap-2 bg-white position-relative"
+                            style="width: 180px; border-radius: 10px; border: 2px solid #f6f6f6;">
+                            <img src="assets/images/services/car-wash.png" alt="Product 1" class="" style="border-top-right-radius: 10px;border-top-left-radius: 10px; height: 139px;">
+                            <!-- add to cart -->
+                            <div class="add-to-cart bg-white rounded-circle d-flex justify-content-center align-items-center" style="position: absolute; bottom: 50px; width: 36px;height:36px; bottom: 100px; right:24px;">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <span class="fs-4">+</span>
+                                </a>
+                            </div>
+                            <!-- most liked -->
+                            <div class="most-liked bg-warning px-3" style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px;">
+                                # Most Liked
+                            </div>
+                            <!-- info -->
+                            <div class="product-details my-2 px-2">
+                                <div class="product-title">Need Product Title 1</div>
+                                <div class="product-rating">
+                                    <span class="product-price" style="font-size: 14px;">$120.0+</span>
+                                    <div class="rating">
+                                        <span class="rating-text"><i class="fa-regular fa-thumbs-up"></i>
+                                            <span>87%</span> (20+)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-products-card d-flex flex-column flex-start gap-2 bg-white position-relative"
+                            style="width: 180px; border-radius: 10px; border: 2px solid #f6f6f6;">
+                            <img src="assets/images/services/car-wash.png" alt="Product 1" class="" style="border-top-right-radius: 10px;border-top-left-radius: 10px; height: 139px;">
+                            <!-- add to cart -->
+                            <div class="add-to-cart bg-white rounded-circle d-flex justify-content-center align-items-center" style="position: absolute; bottom: 50px; width: 36px;height:36px; bottom: 100px; right:24px;">
+                                <a href="" class="text-decoration-none text-dark">
+                                    <span class="fs-4">+</span>
+                                </a>
+                            </div>
+                            <!-- most liked -->
+                            <div class="most-liked bg-warning px-3" style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px;">
+                                # Most Liked
+                            </div>
+                            <!-- info -->
+                            <div class="product-details my-2 px-2">
+                                <div class="product-title">Need Product Title 1</div>
+                                <div class="product-rating">
+                                    <span class="product-price" style="font-size: 14px;">$120.0+</span>
+                                    <div class="rating">
+                                        <span class="rating-text"><i class="fa-regular fa-thumbs-up"></i>
+                                            <span>87%</span> (20+)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-sections">
+                <!-- Footer Section 1 -->
+                <div class="footer-section">
+                    <h4>Footer Section 1</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 2 -->
+                <div class="footer-section">
+                    <h4>Footer Section 2</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 3 -->
+                <div class="footer-section">
+                    <h4>Footer Section 3</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 4 -->
+                <div class="footer-section">
+                    <h4>Footer Section 4</h4>
+                    <ul>
+                        <li>About: </li>
+                        <li>Contact:</li>
+                        <li>Address:</li>
+                    </ul>
+                    <div class="download-options">
+                        <div class="app-store">
+                            <img src="assets/images/icons/app-store.png" alt="Google Play Download">
+                        </div>
+                        <div class="play">
+                            <img src="assets/images/icons/google-play.png" alt="App Store Download">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">California Policy</a>
+                <a href="">Do not Sell or Share My PersonL info</a>
+                <a href="">© 2023 HelpAbode</a>
+            </div>
+        </footer>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
