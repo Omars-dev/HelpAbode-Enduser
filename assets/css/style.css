@@ -104,93 +104,6 @@ body {
     width: 10px;
 }
 
-/* 27 Dec 23 locations modal */
-.modal-header{
-    border-bottom: none !important;
-}
-.modal-header .btn-close{
-    opacity: 1 !important;
-    margin: 0 !important;
-    /* background: transparent url('/assets/images/icons/menu-icons/cross.svg') center / 1em auto no-repeat !important; */
-}
-.modal-header .btn-back{
-    background: transparent url('/assets/images/icons/menu-icons/back.svg') center / 1em auto no-repeat !important;
-}
-.modal-body h1{
-    color: var(--Category-Text-1, #191919);
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: -0.84px;
-    margin-bottom: 12px;
-}
-.address-item{
-    cursor: pointer;
-}
-.address-item:hover{
-    background: var(--category1-bg);
-}
-.address-details .address-header{
-    color: var(--black);
-    font-size: 16px;
-    font-weight: 500;
-}
-.address-details .address-description{
-    color: var(--Black, #000);
-    font-size: 14px;
-    font-weight: 400;
-}
-
-/* map-area */
-.map-area{
-    position: relative;
-    width: 100%;
-}
-/* .adjust-area{
-    height: 450px;
-} */
-.map-area .adjust-pin{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.adjust-pin img{
-    width: 150px !important;
-}
-.map-area img{
-    height: 191px;
-    width: 100%;
-}
-.custom-input:focus {
-    box-shadow: none !important;
-    border-bottom: 2px solid var(--primary) !important;
-    background: var(--category-bg);
-}
-
-.custom-input:focus {
-    outline: none !important;
-}
-
-.custom-input {
-    border: none !important;
-    border-radius: 4px !important;
-    border-bottom: 2px solid transparent !important;
-    background: var(--category-bg);
-}
-.modal-body .form-group label{
-    color: var(--black);
-    font-size: 16px;
-    font-weight: 600;
-}
-.action-btn span{
-    cursor: pointer;
-}
-/* 27 Dec 23 end */
-
-.banner{
-    background: var(--banner-bg);
-}
-
 
 /* Search bar container styles */
 .search-bar-container {
@@ -591,4 +504,99 @@ body {
 
 .rotated {
     transform: rotate(15deg);
+}
+
+/* 27 Dec 23 locations modal */
+.modal-header{
+    border-bottom: none !important;
+}
+.modal-header .btn-close{
+    opacity: 1 !important;
+    margin: 0 !important;
+    /* background: transparent url('/assets/images/icons/menu-icons/cross.svg') center / 1em auto no-repeat !important; */
+}
+.modal-header .btn-back{
+    background: transparent url('/assets/images/icons/menu-icons/back.svg') center / 1em auto no-repeat !important;
+}
+.modal-body h1{
+    color: var(--Category-Text-1, #191919);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.84px;
+    margin-bottom: 12px;
+}
+.address-item{
+    cursor: pointer;
+}
+.address-item:hover{
+    background: var(--category1-bg);
+}
+.address-details .address-header{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+}
+.address-details .address-description{
+    color: var(--Black, #000);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* map-area */
+.map-area{
+    position: relative;
+    width: 100%;
+}
+/* .adjust-area{
+    height: 450px;
+} */
+.map-area .adjust-pin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.adjust-pin img{
+    width: 150px !important;
+}
+.map-area img{
+    height: 191px;
+    width: 100%;
+}
+.custom-input:focus {
+    box-shadow: none !important;
+    border-bottom: 2px solid var(--primary) !important;
+    background: var(--category-bg);
+}
+
+.custom-input:focus {
+    outline: none !important;
+}
+
+.custom-input {
+    border: none !important;
+    border-radius: 4px !important;
+    border-bottom: 2px solid transparent !important;
+    background: var(--category-bg);
+}
+.modal-body .form-group label{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+}
+.action-btn span{
+    cursor: pointer;
+}
+/* 27 Dec 23 end */
+
+.banner{
+    background: var(--banner-bg);
+}
+.banner .category-info{
+    position: absolute;
+    top: 24px;
+    left: 36%;
+}
+.m-category-cards .product-card{
+    margin-bottom: 20px;
 }
