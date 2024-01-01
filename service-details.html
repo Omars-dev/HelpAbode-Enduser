@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Abode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <!-- Logo -->
+        <img src="assets/images/svg/logo.svg" alt="Logo" class="logo">
+
+        <!-- Location -->
+        <div class="location" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>775 Waterville Drive</span>
+            <span class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <span class="search-icon" id="searchIcon">
+                <img src="assets/images/svg/Search.svg" alt="">
+            </span>
+            <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+        </div>
+
+        <div class="actions d-flex gap-3">
+            <!-- Notification Icon -->
+            <div class="notification">
+                <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                <span>0 Carts</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-body">
+
+        <div class="service-details" style="margin: 24px 64px">
+            <div class="breadcrumb d-flex align-items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span> Back to The Phone Repair</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="col-5">
+                    <div class="bg-light">
+                        <img class="px-3 py-3 w-100" src="./assets/images/services/iphone-glass.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="service-info ps-5">
+                        <div class="service-title">Service Name</div>
+                        <div class="price">$120</div>
+                        <div class="l-rr">
+                            <span class="text-success me-4">#1 Most Liked</span>
+                            <span class="bg-light rounded-pill px-2 py-1 text-dark"><i
+                                    class="fa-solid fa-thumbs-up"></i> 87% (22)</span>
+                        </div>
+                        <div class="service-desc">
+                            Service short details, service short details, service short details, service short details
+                            service short details, service short details, service short details, service short details,
+                            service short details, service short details
+                        </div>
+                        <hr>
+                        <div class="packages">
+                            <div class="package-header d-flex align-items-center justify-content-between">
+                                <span>Select Package</span>
+                                <span class="rounded-3 bg-light px-2">Required</span>
+                            </div>
+                            <div class="package-info bg-light mt-3 rounded-3 border border-2">
+                                <div class="p-tabs">
+                                    <div class="tabs px-3 py-2 bg-white d-flex flex-start gap-3">
+                                        <div class="tab-button active px-4 py-2 bg-light text-dark rounded-pill"
+                                            onclick="openTab('basic')">Basic</div>
+                                        <div class="tab-button px-3 py-2" onclick="openTab('stain')">Stain Buster</div>
+                                        <div class="tab-button px-3 py-2" onclick="openTab('deep')">Deep Clean</div>
+                                    </div>
+                                    <div class="p-tabs-details px-3 py-3">
+                                        <div class="tab-content active" id="basic">
+                                            Basic Attrribute:<br>
+                                            Need details details details details details
+                                        </div>
+                                        <div class="tab-content" id="stain">
+                                            Stain Buster Attrribute:<br>
+                                            Need details details details details details
+                                        </div>
+                                        <div class="tab-content" id="deep">
+                                            Deep Clean Attrribute:<br>
+                                            Need details details details details details
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mt-0 mb-0">
+                                <a href=""
+                                    class="customize-btn px-3 py-2 d-flex align-items-center justify-content-between text-decoration-none text-dark">
+                                    <span>Customize Service</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-success rounded-pill mt-5 w-100">
+                            Continue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommended for you -->
+        <div class="container recommended-for-you my-5">
+            <div class="recommended-service-items">
+                <div class="recommended-cards position-relative d-flex align-items-center justify-content-between">
+                    <div class="rls px-3 mt-3">
+                        <div class="most-liked px-3"
+                            style="position: absolute; bottom: 50px;height:26px; top: 0px; left:0px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; background: #D5E7E0;">
+                            # Most Liked
+                        </div>
+                        <div class="rec-title mb-2">Need Product Title 1</div>
+                        <div class="rec-short-desc">
+                            Need short desc, Need short desc, Need short desc
+                        </div>
+                        <div class="price-r mt-1 d-flex justify-content-between">
+                            <span>$120+</span>
+                            <span>
+                                <i class="fa-regular fa-thumbs-up"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rrs" style="width: 220px;">
+                        <div class="image">
+                            <img style="width: 100%;height: 158px;object-fit: cover;" src="./assets/images/services/computer-repair.jpg" alt="">
+                        </div>
+                        <div class="add-to-cart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="position">
+            <div class="footer-sections">
+                <!-- Footer Section 1 -->
+                <div class="footer-section">
+                    <h4>Footer Section 1</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 2 -->
+                <div class="footer-section">
+                    <h4>Footer Section 2</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 3 -->
+                <div class="footer-section">
+                    <h4>Footer Section 3</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 4 -->
+                <div class="footer-section">
+                    <h4>Footer Section 4</h4>
+                    <ul>
+                        <li>About: </li>
+                        <li>Contact:</li>
+                        <li>Address:</li>
+                    </ul>
+                    <div class="download-options">
+                        <div class="app-store">
+                            <img src="assets/images/icons/app-store.png" alt="Google Play Download">
+                        </div>
+                        <div class="play">
+                            <img src="assets/images/icons/google-play.png" alt="App Store Download">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">California Policy</a>
+                <a href="">Do not Sell or Share My PersonL info</a>
+                <a href="">© 2023 HelpAbode</a>
+            </div>
+        </footer>
+        </footer>
+    </section>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+
+        // Set the "Overview" tab as active by default
+        openTab('basic');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
