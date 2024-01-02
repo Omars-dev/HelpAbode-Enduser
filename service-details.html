@@ -111,13 +111,15 @@
                                 </div>
                                 <hr class="mt-0 mb-0">
                                 <a href=""
-                                    class="customize-btn px-3 py-2 d-flex align-items-center justify-content-between text-decoration-none text-dark">
+                                    class="customize-btn px-3 py-2 d-flex align-items-center justify-content-between text-decoration-none text-dark"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                                     <span>Customize Service</span>
                                     <span><i class="fa-solid fa-chevron-right"></i></span>
                                 </a>
                             </div>
                         </div>
-                        <a href="" class="btn btn-success rounded-pill mt-5 w-100">
+                        <a href="" class="btn btn-success rounded-pill mt-5 w-100" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                             Continue
                         </a>
                     </div>
@@ -247,6 +249,278 @@
             </div>
         </div>
 
+        <!-- Reviews -->
+        <div class="container reviews-section my-5">
+            <!-- controller -->
+            <div class="add-review d-flex justify-content-between align-items-center mb-3">
+                <div class="review-header" id="featured">
+                    <div class="r-header b-title">Reviews</div>
+                    <div>
+                        <span>152+ Ratings</span>
+                        <span>.</span>
+                        <span>121 Reviews</span>
+                    </div>
+                </div>
+                <div class="prev-next-buttons">
+                    <span class="view-all-text">
+                        <a href="view-all.html"
+                            class=" text-decoration-none text-dark bg-light rounded-pill px-3 py-2">Add
+                            Review</a>
+                    </span>
+                    <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                    <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                </div>
+            </div>
+
+            <!-- Reviews / Add -->
+            <div class="reviews" style="width: 100%; height: 100%; overflow: scroll hidden; display: flex; gap: 12px;">
+
+                <!-- overall ratings -->
+                <div class="overall-r">
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-light me-2"
+                        style="height: 156px; min-width: 101px; max-width: 101px; padding: 8px 12px; border-radius: 8px;">
+                        <div>
+                            <div class="position-relative">
+                                <svg width="75" height="75">
+                                    <circle stroke="#ffffff" stroke-width="9" fill="transparent" r="27.5" cx="50%"
+                                        cy="50%" stroke-linecap="round"
+                                        stroke-dasharray="129.59069696057898 172.78759594743863" stroke-dashoffset="0"
+                                        style="transform: rotate(135deg); transform-origin: center center; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 4px);">
+                                    </circle>
+                                    <circle stroke="#008951" stroke-width="9" fill="transparent" r="27.5" cx="50%"
+                                        cy="50%" stroke-linecap="round"
+                                        stroke-dasharray="129.59069696057898 172.78759594743863"
+                                        stroke-dashoffset="29.235661234306605"
+                                        style="transform: rotate(135deg); transform-origin: center center; transition: stroke-dashoffset 1s ease 0s;">
+                                    </circle>
+                                </svg>
+                                <div class="position-absolute" style="-index: 1;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);">
+                                    <span overflow="normal" display="block"
+                                        class="styles__TextElement-sc-3qedjx-0 SkkSx">4.4</span>
+                                </div>
+                                <div class="position-absolute" style="z-index: 1;
+                            top: calc(50% + 23.5px);
+                            left: 50%;
+                            transform: translate(-50%, -50%);">
+                                    <span class="sc-c44ca767-5 cgpPKv">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                            class="styles__StyledInlineSvg-sc-12l8vvi-0 djCUZq">
+                                            <path
+                                                d="M8.91126 0.588193C8.74945 0.230121 8.39293 0 7.99999 0C7.60705 0 7.25054 0.230121 7.08872 0.588193L5.37316 4.38448L1.23254 4.84295C0.841992 4.8862 0.512964 5.15416 0.39154 5.52786C0.270115 5.90157 0.378802 6.31175 0.669346 6.5763L3.7497 9.381L2.90621 13.4606C2.82665 13.8454 2.97982 14.2412 3.29771 14.4721C3.6156 14.7031 4.0393 14.7265 4.38068 14.5319L7.99999 12.469L11.6193 14.5319C11.9607 14.7265 12.3844 14.7031 12.7023 14.4721C13.0202 14.2412 13.1733 13.8454 13.0938 13.4606L12.2503 9.381L15.3306 6.5763C15.6212 6.31175 15.7299 5.90157 15.6084 5.52786C15.487 5.15416 15.158 4.8862 14.7674 4.84295L10.6268 4.38448L8.91126 0.588193Z"
+                                                fill="#767676"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sc-c44ca767-4 hOAtWT">
+                            <span display="block" color="TextSecondary"
+                                class="styles__TextElement-sc-3qedjx-0 bxJPYn">of 5 stars</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Available reviews -->
+                <div class="available-reviews">
+                    <div class="reviews-list bg-light py-3 px-3 rounded-3">
+                        <div class="r-user-info d-flex align-items-center gap-3 mb-1">
+                            <img src="./assets/images/icons/user.svg" alt="">
+                            <h3>User Name</h3>
+                        </div>
+                        <div class="star-date mb-1">
+                            <span class="stars-count">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="review-date">13/9/23</span>
+                            <span>.</span>
+                            <span class="app-title">Help Abode order</span>
+                        </div>
+                        <div class="r-comment">
+                            User review content, user review content user user review content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="available-reviews">
+                    <div class="reviews-list bg-light py-3 px-3 rounded-3">
+                        <div class="r-user-info d-flex align-items-center gap-3 mb-1">
+                            <img src="./assets/images/icons/user.svg" alt="">
+                            <h3>User Name</h3>
+                        </div>
+                        <div class="star-date mb-1">
+                            <span class="stars-count">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="review-date">13/9/23</span>
+                            <span>.</span>
+                            <span class="app-title">Help Abode order</span>
+                        </div>
+                        <div class="r-comment">
+                            User review content, user review content user user review content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="available-reviews">
+                    <div class="reviews-list bg-light py-3 px-3 rounded-3">
+                        <div class="r-user-info d-flex align-items-center gap-3 mb-1">
+                            <img src="./assets/images/icons/user.svg" alt="">
+                            <h3>User Name</h3>
+                        </div>
+                        <div class="star-date mb-1">
+                            <span class="stars-count">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="review-date">13/9/23</span>
+                            <span>.</span>
+                            <span class="app-title">Help Abode order</span>
+                        </div>
+                        <div class="r-comment">
+                            User review content, user review content user user review content
+                        </div>
+                    </div>
+                </div>
+
+                <div class="available-reviews">
+                    <div class="reviews-list bg-light py-3 px-3 rounded-3">
+                        <div class="r-user-info d-flex align-items-center gap-3 mb-1">
+                            <img src="./assets/images/icons/user.svg" alt="">
+                            <h3>User Name</h3>
+                        </div>
+                        <div class="star-date mb-1">
+                            <span class="stars-count">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="review-date">13/9/23</span>
+                            <span>.</span>
+                            <span class="app-title">Help Abode order</span>
+                        </div>
+                        <div class="r-comment">
+                            User review content, user review content user user review content
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- service customization modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Service Customization</h1>
+                        <div class="customize-service mb-4">
+                            <div class="service-attributes mt-4">
+                                <div class="attribut1 px-3 py-3 mb-3 border border-2 rounded-3 w-100">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">House Type and
+                                            Size</label>
+                                        <select class="form-select mb-2 rounded-pill"
+                                            aria-label="Default select example">
+                                            <option selected>Select house type</option>
+                                            <option value="1">Single Family</option>
+                                            <option value="2">Apartment</option>
+                                            <option value="3">3 Story 5 Bedroom House</option>
+                                        </select>
+                                        <input type="email" class="form-control mb-2 rounded-pill"
+                                            placeholder="House size">
+                                        <input type="email" class="form-control rounded-pill" placeholder="Lot size">
+                                    </div>
+                                </div>
+
+                                <div class="attribut1 px-3 py-3 mb-3 border border-2 rounded-3 w-100">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Rooms and Areas</label>
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bedroom</option>
+                                                    <option value="1">1 Bedroom</option>
+                                                    <option value="2">2 Bedroom</option>
+                                                    <option value="3">3 Bedroom</option>
+                                                    <option value="4">4 Bedroom</option>
+                                                    <option value="5">5 Bedroom</option>
+                                                    <option value="6">6 Bedroom</option>
+                                                    <option value="7">7 Bedroom</option>
+                                                    <option value="8">8 Bedroom</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bathroom</option>
+                                                    <option value="1">1 Bathroom</option>
+                                                    <option value="2">2 Bathroom</option>
+                                                    <option value="3">3 Bathroom</option>
+                                                    <option value="4">4 Bathroom</option>
+                                                    <option value="5">5 Bathroom</option>
+                                                    <option value="6">6 Bathroom</option>
+                                                    <option value="7">7 Bathroom</option>
+                                                    <option value="8">8 Bathroom</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bedroom</option>
+                                                    <option value="1">1 Bedroom</option>
+                                                    <option value="2">2 Bedroom</option>
+                                                    <option value="3">3 Bedroom</option>
+                                                    <option value="4">4 Bedroom</option>
+                                                    <option value="5">5 Bedroom</option>
+                                                    <option value="6">6 Bedroom</option>
+                                                    <option value="7">7 Bedroom</option>
+                                                    <option value="8">8 Bedroom</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bathroom</option>
+                                                    <option value="1">1 Bathroom</option>
+                                                    <option value="2">2 Bathroom</option>
+                                                    <option value="3">3 Bathroom</option>
+                                                    <option value="4">4 Bathroom</option>
+                                                    <option value="5">5 Bathroom</option>
+                                                    <option value="6">6 Bathroom</option>
+                                                    <option value="7">7 Bathroom</option>
+                                                    <option value="8">8 Bathroom</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="submit-btn"><button class="btn btn-success rounded-pill w-100 mt-4 mb-2">Save</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Footer -->

@@ -39,6 +39,35 @@ body {
     color: var(--black);
 }
 
+/* inputs */
+input, select{
+    border: 2px solid transparent !important;
+    background: var(--category-bg);
+    background: var(--input-field-box) !important;
+}
+.service-attributes input:focus, select:focus{
+    box-shadow: none !important;
+    border: 2px solid var(--black) !important;
+    border-radius: 50px;
+}
+.service-attributes .form-select{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #212529 !important;
+    background-color: #fff;
+    background-image: url('../images/icons/dropdown.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 16px 12px !important;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
 .b-title{
     color: var(--black);
     font-size: 22px;
