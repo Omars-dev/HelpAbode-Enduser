@@ -843,11 +843,11 @@ input, select{
 
 /* custom icon */
 .schedule-list {
-    width: 86px;
+    width: 92px;
     height: 86px;
-  }
+}
 
-  .list {
+.list {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -856,23 +856,53 @@ input, select{
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-  }
+    position: relative;
+}
 
-  .disabled {
+.disabled {
     background-color: #E9E9E9; /* Grey color for disabled */
     cursor: not-allowed;
     color: #535151;
-  }
+}
 
-  .w-price {
+.w-price {
     font-weight: bold;
-  }
+}
 
-  .schedule-lits {
+.schedule-lits {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 12px; /* Gap between the two lines */
-  }
+}
+
+.time-slot-section {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #AFDFCA;
+}
+
+.content-under-schedule {
+    margin-top: 0; /* Initial margin top */
+    transition: margin-top 0.3s ease; /* Add smooth transition */
+}
