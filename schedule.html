@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Abode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <!-- Logo -->
+        <img src="assets/images/svg/logo.svg" alt="Logo" class="logo">
+
+        <!-- Location -->
+        <div class="location" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            <span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>775 Waterville Drive</span>
+            <span class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar-container">
+            <span class="search-icon" id="searchIcon">
+                <img src="assets/images/svg/Search.svg" alt="">
+            </span>
+            <input type="text" placeholder="Search" class="search-bar" id="searchInput">
+        </div>
+
+        <div class="actions d-flex gap-3">
+            <!-- Notification Icon -->
+            <div class="notification">
+                <span class="notification-icon"><i class="fa-regular fa-bell"></i></span>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                <span>0 Carts</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-body">
+
+        <div class="service-details" style="margin: 24px 64px">
+            <div class="breadcrumb d-flex align-items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span> Back to The Phone Repair</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="col-5">
+                    <div class="bg-light">
+                        <img class="px-3 py-3 w-100" src="./assets/images/services/iphone-glass.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="service-info ps-5">
+                        <div class="service-title">
+                            <h1>Service Name</h1>
+                        </div>
+                        <div class="price">$120</div>
+                        <div class="l-rr mb-4">
+                            <!-- selected package -->
+                            <span class="bg-light rounded-pill px-3 py-2 text-success"> Basic </span>
+                        </div>
+                        <div class="customized-attributes">
+                            <div class="attributes-info bg-light mt-3 rounded-3">
+                                <ul class="px-3 mb-0 pt-3 list-unstyled">
+                                    <li class="attributes icon">
+                                        Attrribute 1
+                                    </li>
+                                    <li class="attributes">
+                                        Attrribute 2
+                                    </li>
+                                    <li class="attributes">
+                                        Attrribute 3
+                                    </li>
+                                    <hr class="mt-3 mb-0 px-3">
+                                </ul>
+                                <a href=""
+                                    class="edit-selection px-3 py-2 d-flex align-items-center justify-content-between text-decoration-none text-dark"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                    <span>Edit Selection</span>
+                                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- divider -->
+                        <hr class="mt-3 mb-0 px-3">
+
+                        <!-- schedule selection -->
+                        <!-- <div class="schedule-selection my-4">
+                            <div class="schedule-header d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3>Select Schedule</h3>
+                                </div>
+                                <div class="prev-next-buttons">
+                                    <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                                    <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                                </div>
+                            </div>
+                            <div class="schedule-lits my-3">
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+
+                                <div class="list bg-info rounded-3 px-3 py-3 d-inline-flex">
+                                    <div>
+                                        <div class="date">Sa 9/19</div>
+                                        <div class="w-price">$95.00+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="schedule-selection my-4">
+                            <div class="schedule-header d-flex justify-content-between align-items-center">
+                              <div>
+                                <h3>Select Schedule</h3>
+                              </div>
+                              <div class="prev-next-buttons">
+                                <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                                <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+                              </div>
+                            </div>
+                            <div class="schedule-lits">
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/19</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+                        
+                              <!-- Example of a disabled list -->
+                              <div class="list schedule-list disabled">
+                                <div>
+                                  <div class="date">Sa 9/20</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+                        
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/21</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+                        
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/22</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+
+                              <div class="list schedule-list disabled">
+                                <div>
+                                  <div class="date">Sa 9/20</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+
+                              <div class="list schedule-list disabled">
+                                <div>
+                                  <div class="date">Sa 9/20</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+                        
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/23</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/23</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+
+                              <div class="list schedule-list disabled">
+                                <div>
+                                  <div class="date">Sa 9/20</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/23</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/23</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+                        
+                              <div class="list schedule-list">
+                                <div>
+                                  <div class="date">Sa 9/24</div>
+                                  <div class="w-price">$95.00+</div>
+                                </div>
+                              </div>
+                        
+                              <!-- Add more lists as needed -->
+                        
+                            </div>
+                          </div>
+
+                        <a href="" class="btn btn-success rounded-pill mt-5 w-100" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            Continue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- service customization modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Service Customization</h1>
+                        <div class="customize-service">
+                            <div class="service-attributes mt-4">
+                                <div class="attribut1 px-3 py-3 mb-3 border border-2 rounded-3 w-100">
+                                    <div>
+                                        <label for="exampleFormControlInput1" class="form-label">House Type and
+                                            Size</label>
+                                        <select class="form-select mb-2 rounded-pill"
+                                            aria-label="Default select example">
+                                            <option value="1" selected>Single Family</option>
+                                            <option value="2">Apartment</option>
+                                            <option value="3">3 Story 5 Bedroom House</option>
+                                        </select>
+                                        <input type="email" class="form-control mb-2 rounded-pill"
+                                            placeholder="House size">
+                                        <input type="email" class="form-control rounded-pill" placeholder="Lot size">
+                                    </div>
+                                </div>
+
+                                <div class="attribut1 px-3 py-3 border border-2 rounded-3 w-100">
+                                    <div>
+                                        <label for="exampleFormControlInput1" class="form-label">Rooms and Areas</label>
+                                        <div class="row mb-2">
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bedroom</option>
+                                                    <option value="1">1 Bedroom</option>
+                                                    <option value="2">2 Bedroom</option>
+                                                    <option value="3">3 Bedroom</option>
+                                                    <option value="4">4 Bedroom</option>
+                                                    <option value="5">5 Bedroom</option>
+                                                    <option value="6">6 Bedroom</option>
+                                                    <option value="7">7 Bedroom</option>
+                                                    <option value="8">8 Bedroom</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bathroom</option>
+                                                    <option value="1">1 Bathroom</option>
+                                                    <option value="2">2 Bathroom</option>
+                                                    <option value="3">3 Bathroom</option>
+                                                    <option value="4">4 Bathroom</option>
+                                                    <option value="5">5 Bathroom</option>
+                                                    <option value="6">6 Bathroom</option>
+                                                    <option value="7">7 Bathroom</option>
+                                                    <option value="8">8 Bathroom</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bedroom</option>
+                                                    <option value="1">1 Bedroom</option>
+                                                    <option value="2">2 Bedroom</option>
+                                                    <option value="3">3 Bedroom</option>
+                                                    <option value="4">4 Bedroom</option>
+                                                    <option value="5">5 Bedroom</option>
+                                                    <option value="6">6 Bedroom</option>
+                                                    <option value="7">7 Bedroom</option>
+                                                    <option value="8">8 Bedroom</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-select mb-2 rounded-pill">
+                                                    <option selected>0 Bathroom</option>
+                                                    <option value="1">1 Bathroom</option>
+                                                    <option value="2">2 Bathroom</option>
+                                                    <option value="3">3 Bathroom</option>
+                                                    <option value="4">4 Bathroom</option>
+                                                    <option value="5">5 Bathroom</option>
+                                                    <option value="6">6 Bathroom</option>
+                                                    <option value="7">7 Bathroom</option>
+                                                    <option value="8">8 Bathroom</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit-btn"><button class="btn btn-success rounded-pill w-100 mt-3">Save</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="position">
+            <div class="footer-sections">
+                <!-- Footer Section 1 -->
+                <div class="footer-section">
+                    <h4>Footer Section 1</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 2 -->
+                <div class="footer-section">
+                    <h4>Footer Section 2</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 3 -->
+                <div class="footer-section">
+                    <h4>Footer Section 3</h4>
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Section 4 -->
+                <div class="footer-section">
+                    <h4>Footer Section 4</h4>
+                    <ul>
+                        <li>About: </li>
+                        <li>Contact:</li>
+                        <li>Address:</li>
+                    </ul>
+                    <div class="download-options">
+                        <div class="app-store">
+                            <img src="assets/images/icons/app-store.png" alt="Google Play Download">
+                        </div>
+                        <div class="play">
+                            <img src="assets/images/icons/google-play.png" alt="App Store Download">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">California Policy</a>
+                <a href="">Do not Sell or Share My PersonL info</a>
+                <a href="">© 2023 HelpAbode</a>
+            </div>
+        </footer>
+        </footer>
+    </section>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+
+        // Set the "Overview" tab as active by default
+        openTab('basic');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
