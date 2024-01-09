@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <style>
+        /* Your existing styles go here */
+        .schedule-header h3 {
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .schedule-selection {
+            margin: 0 auto;
+        }
+
+        .schedule-selection .carousel-content {
+            overflow: hidden;
+        }
+
+        .date-time-row {
+            display: inline-flex;
+            gap: 12px;
+        }
+
+        .date-price {
+            position: relative;
+            cursor: pointer;
+            width: 92px;
+            height: 86px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #afdfca;
+        }
+
+        .disabled {
+            background-color: #e9e9e9;
+            cursor: not-allowed;
+            color: #535151;
+        }
+
+        .date-price.active {
+            background: var(--primary);
+            color: white !important;
+        }
+
+        .date-price.active::before {
+            content: "";
+            position: absolute;
+            bottom: -24%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            display: inline-block;
+            transform: translate(-50%, -50%);
+            border-left: 11px solid transparent;
+            border-right: 11px solid transparent;
+            border-top: 15px solid #008951;
+            transition: all 0.3s;
+        }
+
+        .date-time-row.sec3 .date-price.active::before {
+            top: -7px;
+            bottom: auto;
+            border-top: none;
+            border-bottom: 15px solid #008951;
+            z-index: 1;
+        }
+
+        .time-slot {
+            display: none;
+            padding: 10px;
+            background: #f6f6f6;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .time {
+            color: black;
+            background: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-family: Inter;
+            font-weight: 500;
+            text-align: center;
+            word-wrap: break-word;
+        }
+
+        .date-price .date,
+        .w-price {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .row1,
+        .row2 {
+            padding: 12px;
+            border-radius: 8px;
+            gap: 12px;
+            font-size: 13px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const datePrices = document.querySelectorAll('.date-price:not(.disabled)');
+
+            datePrices.forEach(function (datePrice) {
+                datePrice.addEventListener('click', function () {
+                    const isActive = datePrice.classList.contains('active');
+
+                    datePrices.forEach(function (dp) {
+                        dp.classList.remove('active');
+                    });
+
+                    const targetTimeSlotId = datePrice.getAttribute('data-target');
+                    const timeSlotSections = document.querySelectorAll('.time-slot');
+
+                    timeSlotSections.forEach(function (timeSlotSection) {
+                        timeSlotSection.style.display = 'none';
+                    });
+
+                    if (!isActive) {
+                        datePrice.classList.add('active');
+                        const targetTimeSlot = document.getElementById(targetTimeSlotId);
+                        if (targetTimeSlot) {
+                            targetTimeSlot.style.display = 'block';
+                        }
+                    }
+                });
+            });
+
+            $('#date-time-carousel').slick({
+                slidesToShow: 18,
+                slidesToScroll: 1,
+                prevArrow: '<div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>',
+                nextArrow: '<div class="prev-next-button"><i class="fa fa-chevron-right"></i></div>',
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="date-time-carousel" class="schedule-selection my-4">
+        <!-- schedule header -->
+        <div class="schedule-header mb-3 mt-4 d-flex justify-content-between align-items-center">
+            <div>
+                <h3>Select Schedule</h3>
+            </div>
+            <!-- slider indicator -->
+            <div class="prev-next-buttons">
+                <div class="prev-next-button"><i class="fa fa-chevron-left"></i></div>
+                <div class="prev-next-button"> <i class="fa fa-chevron-right"></i> </div>
+            </div>
+        </div>
+
+        <!-- schedule list -->
+        <div class="carousel-content">
+            <div class="date-time-row sec1">
+                <!-- Your existing date-time cards go here -->
+                <div class="date-price active" data-target="time-slot-1">
+                    <div class="date">Sa 9/19</div>
+                    <div class="w-price">$95.00+</div>
+                </div>
+
+                <!-- Repeat for other date-price cards in the 1st row -->
+            </div>
+
+            <div class="date-time-row sec2">
+                <!-- Your existing date-time cards go here -->
+                <div class="date-price disabled" data-target="time-slot-3">
+                    <div class="date">Mo 9/21</div>
+                    <div class="w-price">RFQ</div>
+                </div>
+
+                <!-- Repeat for other date-price cards in the 2nd row -->
+            </div>
+
+            <div class="date-time-row sec3">
+                <!-- Your existing date-time cards go here -->
+                <div class="date-price" data-target="time-slot-5">
+                    <div class="date">We 9/23</div>
+                    <div class="w-price">$70.00+</div>
+                </div>
+
+                <!-- Repeat for other date-price cards in the 3rd row -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</body>
+
+</html>
