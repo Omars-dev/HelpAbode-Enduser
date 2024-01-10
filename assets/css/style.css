@@ -242,12 +242,25 @@ select:focus {
 }
 .category-box1 {
   display: inline-flex;
+  flex-shrink: 0;
   padding: 9px 15px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 30px;
   background: var(--white);
+}
+.horizontal-scroll .btn-scroll {
+  background: white;
+  color: #999;
+  box-shadow: 0 0 10px #999;
+  padding: 5px 12px;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+  transition: 1s;
 }
 .scendary-category {
   display: inline-flex;

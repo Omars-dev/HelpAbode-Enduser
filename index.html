@@ -54,47 +54,92 @@
     <section class="main-body">
         <!-- Main category -->
         <div class="main-category">
-            <a href="main-category.html" class="category-box1 text-decoration-none text-dark">
-                <span>
-                    <img src="assets/images/icons/floorCleaning.png" alt="">
-                </span>
-                <span class="title">Floor Cleaning</span>
-            </a>
+            <div class="horizontal-scroll d-flex flex-row justify-content-between align-items-center position-relative rounded-3 gap-3"
+            style="width: 100%; height: 80px;overflow: hidden;">
+            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i
+                    class="fa fa-chevron-left"></i></button>
+                <div class="storys-container d-flex flex-row justify-content-start align-items-center position-absolute gap-3"
+                style="position: absolute;transition: 0.5s all ease-out;">
+                    <a href="main-category.html" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/floorCleaning.png" alt="">
+                        </span>
+                        <span class="title">Floor Cleaning</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/carWash.png" alt="">
+                        </span>
+                        <span class="title">Car Wash</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/carWash.png" alt="">
+                        </span>
+                        <span class="title">Car Wash</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/carWash.png" alt="">
+                        </span>
+                        <span class="title">Car Wash</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/houseClean.png" alt="">
+                        </span>
+                        <span class="title">House Cleaning</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/landscaping.png" alt="">
+                        </span>
+                        <span class="title">Landscaping</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/carpetCleaning.png" alt="">
+                        </span>
+                        <span class="title">Carpet Cleaning</span>
+                    </a>
+        
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/swimming-pool.svg" alt="">
+                        </span>
+                        <span class="title">Swimming Pool</span>
+                    </a>
 
-            <a href="#" class="category-box1 text-decoration-none text-dark">
-                <span>
-                    <img src="assets/images/icons/carWash.png" alt="">
-                </span>
-                <span class="title">Car Wash</span>
-            </a>
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/swimming-pool.svg" alt="">
+                        </span>
+                        <span class="title">Swimming Pool</span>
+                    </a>
 
-            <a href="#" class="category-box1 text-decoration-none text-dark">
-                <span>
-                    <img src="assets/images/icons/houseClean.png" alt="">
-                </span>
-                <span class="title">House Cleaning</span>
-            </a>
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/swimming-pool.svg" alt="">
+                        </span>
+                        <span class="title">Swimming Pool</span>
+                    </a>
 
-            <a href="#" class="category-box1 text-decoration-none text-dark">
-                <span>
-                    <img src="assets/images/icons/landscaping.png" alt="">
-                </span>
-                <span class="title">Landscaping</span>
-            </a>
-
-            <a href="#" class="category-box1 text-decoration-none text-dark">
-                <span>
-                    <img src="assets/images/icons/carpetCleaning.png" alt="">
-                </span>
-                <span class="title">Carpet Cleaning</span>
-            </a>
-
-            <a href="#" class="category-box1 text-decoration-none text-dark">
-                <span>
-                    <img src="assets/images/icons/swimming-pool.svg" alt="">
-                </span>
-                <span class="title">Swimming Pool</span>
-            </a>
+                    <a href="#" class="category-box1 text-decoration-none text-dark">
+                        <span>
+                            <img src="assets/images/icons/swimming-pool.svg" alt="">
+                        </span>
+                        <span class="title">Swimming Pool</span>
+                    </a>
+                </div>
+                <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i
+                    class="fa fa-chevron-right"></i></button>
+            </div>
         </div>
         <!-- end main category -->
 
@@ -569,6 +614,41 @@
 
 
     </section>
+
+    <!-- main category scroll -->
+    <script>
+        let currentScrollPosition = 0;
+        let currentAmount = 320;
+
+        const sCont = document.querySelector(".storys-container");
+        const hScroll = document.querySelector(".horizontal-scroll");
+        const btnScrollLeft = document.querySelector("#btn-scroll-left");
+        const btnScrollRight = document.querySelector("#btn-scroll-right");
+
+        btnScrollLeft.style.opacity = "0";
+
+        let maxScroll = sCont.scrollWidth - hScroll.clientWidth;
+
+        function scrollHorizontally(val) {
+            currentScrollPosition += (val * currentAmount);
+
+            if (currentScrollPosition >= 0) {
+                currentScrollPosition = 0;
+                btnScrollLeft.style.opacity = "0";
+                btnScrollRight.style.opacity = "1";
+            } else if (currentScrollPosition <= -maxScroll) {
+                currentScrollPosition = -maxScroll;
+                btnScrollRight.style.opacity = "0";
+                btnScrollLeft.style.opacity = "1";
+            } else {
+                btnScrollLeft.style.opacity = "1";
+                btnScrollRight.style.opacity = "1";
+            }
+
+            sCont.style.left = currentScrollPosition + "px";
+        }
+    </script>
+    <!-- end -->
 
     <script>
         function rotateImage(element) {
