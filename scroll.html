@@ -52,15 +52,54 @@
         .grabbing {
             cursor: grabbing;
         }
+
+        /* responsive */
+        @media (max-width: 1440px) {
+            .container {
+                max-width: 100% !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                background: white !important;
+            }
+
+            .horizontal-scroll {
+                background: white !important;
+                margin: 24px 16px !important; 
+                padding-left: 0 !important; 
+                padding-right: 0 !important; 
+            }
+
+            .story-circle {
+                flex-direction: column;
+                background: none;
+                padding: 0;
+            }
+
+            .story-circle .img {
+                background: #f6f6f6;
+                padding: 8px;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+            }
+
+            .c-title {
+                color: var(--Category-Text-1, #191919);
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container d-flex align-items-center" style="background: #f9f9f9;">
-        <div class="horizontal-scroll px-3 py-3 d-flex flex-row justify-content-between align-items-center position-relative rounded-3 bg-light"
-            style="width: 1280px; height: 80px;overflow: hidden;margin: 24px 64px;"
-            id="draggable-scroll">
+        <div class="horizontal-scroll px-3 d-flex flex-row justify-content-between align-items-center position-relative rounded-3 bg-light"
+            style="width: 1280px; height: 100px;overflow: hidden;margin: 24px 44px;" id="draggable-scroll">
             <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i
                     class="fa fa-chevron-left"></i></button>
             <div class="storys-container d-flex flex-row justify-content-start align-items-center position-absolute gap-3"
@@ -71,40 +110,40 @@
                     <div class="c-title">Floor Cleaning</div>
                 </div>
                 <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
+                    <div class="img"><img src="./assets/images/icons/carWash.png" alt=""></div>
+                    <div class="c-title">Car Wash</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/houseClean.png" alt=""></div>
+                    <div class="c-title">House Cleaning</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/landscaping.png" alt=""></div>
+                    <div class="c-title">Landscaping</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/carpetCleaning.png" alt=""></div>
+                    <div class="c-title">Carpet Cleaning</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/plumbing.png" alt=""></div>
+                    <div class="c-title">Plumbing</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/airConditioning.png" alt=""></div>
+                    <div class="c-title">Air Conditioning</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/pestControl.png" alt=""></div>
+                    <div class="c-title">Pest Control</div>
+                </div>
+                <div class="story-circle" draggable="true">
+                    <div class="img"><img src="./assets/images/icons/heating.png" alt=""></div>
+                    <div class="c-title">Heating</div>
                 </div>
                 <div class="story-circle" draggable="true">
                     <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
-                </div>
-                <div class="story-circle" draggable="true">
-                    <div class="img"><img src="./assets/images/icons/floorCleaning.png" alt=""></div>
-                    <div class="c-title">Floor Cleaning</div>
+                    <div class="c-title">Painting</div>
                 </div>
                 <!-- Add more story-circle elements as needed -->
             </div>
@@ -119,19 +158,19 @@
         let isDragging = false;
         let startX;
         let scrollLeft;
-    
+
         const sCont = document.querySelector(".storys-container");
         const hScroll = document.querySelector(".horizontal-scroll");
         const btnScrollLeft = document.querySelector("#btn-scroll-left");
         const btnScrollRight = document.querySelector("#btn-scroll-right");
-    
+
         btnScrollLeft.style.opacity = "0";
-    
+
         let maxScroll = sCont.scrollWidth - hScroll.clientWidth;
-    
+
         function scrollHorizontally(val) {
             currentScrollPosition += val * currentAmount;
-    
+
             if (currentScrollPosition >= 0) {
                 currentScrollPosition = 0;
                 btnScrollLeft.style.opacity = "0";
@@ -144,10 +183,10 @@
                 btnScrollLeft.style.opacity = "1";
                 btnScrollRight.style.opacity = "1";
             }
-    
+
             sCont.style.left = currentScrollPosition + "px";
         }
-    
+
         // Drag and drop functionality
         sCont.addEventListener('mousedown', (e) => {
             isDragging = true;
@@ -155,12 +194,12 @@
             startX = e.pageX - sCont.offsetLeft;
             scrollLeft = sCont.scrollLeft;
         });
-    
+
         document.addEventListener('mouseup', () => {
             isDragging = false;
             sCont.classList.remove('grabbing');
         });
-    
+
         document.addEventListener('mousemove', (e) => {
             if (!isDragging) return;
             e.preventDefault();
@@ -169,7 +208,7 @@
             sCont.scrollLeft = scrollLeft - walk;
         });
     </script>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
