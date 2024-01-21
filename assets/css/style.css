@@ -224,6 +224,7 @@ select:focus {
   position: relative;
   top: 70px;
 }
+/* main category */
 .main-category {
   background: var(--input_field_box, #f7f7f7);
   padding: 12px 64px;
@@ -262,6 +263,51 @@ select:focus {
   cursor: pointer;
   transition: 1s;
 }
+/* responsive */
+/* responsive */
+@media (max-width: 1440px) {
+  .container {
+      max-width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-category {
+      background: white !important;
+      padding: 12px 16px !important;
+  }
+  .scendary-category{
+    margin-top:0 !important;
+  }
+
+  .horizontal-scroll {
+      background: white !important;
+      margin: 24px 16px !important; 
+      padding-left: 0 !important; 
+      padding-right: 0 !important; 
+  }
+
+  .category-box1 {
+      flex-direction: column;
+      background: none;
+      padding: 0;
+  }
+
+  .category-box1 .img {
+      background: #f6f6f6;
+      padding: 8px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+  }
+
+  .main-category .storys-container .category-box1 .title {
+      color: var(--Category-Text-1, #191919);
+      font-size: 13px;
+      font-weight: 500;
+  }
+}
+/* end main cate */
 .scendary-category {
   display: inline-flex;
   padding: 4px 64px;
