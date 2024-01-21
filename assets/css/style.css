@@ -901,7 +901,7 @@ select:focus {
 .customized-attributes li::after {
   content: "";
   position: absolute;
-  background-image: url("/assets/images/icons/square-ring.svg");
+  background-image: url('../images/icons/square-ring.svg');
   background-repeat: no-repeat;
   top: 11px;
   left: 6px;
