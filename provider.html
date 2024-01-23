@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Management Dashboard</title>
+    <title>Provider Management</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -24,6 +24,9 @@
 
         .rounded-12 {
             border-radius: 12px !important;
+        }
+        .btn-bg{
+            background: #e9e9e9;
         }
 
         /* Center the profile section */
@@ -185,19 +188,27 @@
         }
 
         .business-info .docs .front,
-        .back {
+        .business-info .docs .back {
             background: #D5E7E0;
-            width: 490px;
-            ;
-            height: 300px;
+            width: 520px;
+            height: 340px;
             border: 2px solid #000;
+            overflow: hidden;
+        }
+        .business-info .docs .front img,
+        .business-info .docs .back img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* or object-fit: contain; depending on your preference */
         }
 
         .business-info .docs .front,
-        .back,
-        .header {
-            border-top-right-radius: 12px;border-top-left-radius: 12px;
+        .business-info .docs .back,
+        .business-info .docs .header {
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
         }
+
 
         .general-info span {
             color: #535151;
@@ -291,7 +302,7 @@
                     <img src="./img/user.png" alt="">
                 </div>
                 <div class="provider-name mt-2">
-                    <h3>Ella Lauda <span><img src="" alt=""></span></h3>
+                    <h3>Akkas Mias <span><img src="" alt=""></span></h3>
                 </div>
             </div>
         </div>
@@ -344,7 +355,7 @@
                 <div class="about border-bottom border-1 pb-3">
                     <h2 class="mb-3">About</h2>
                     <div class="about-info">
-                        <div class="img-icon mb-3"><img src="./svg/account.svg" alt=""> <span>Mr. Salman Khan</span>
+                        <div class="img-icon mb-3"><img src="./svg/account.svg" alt=""> <span>Akkas Miah</span>
                         </div>
                         <div class="img-icon mb-3"><img src="./svg/business.svg" alt=""> <span>Individual</span></div>
                         <div><img src="./svg/company.svg" alt=""> <span>Help Abode</span></div>
@@ -565,6 +576,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container accept-reject mb-5">
+        <button class="btn btn-bg me-4 rounded-8">Decline</button>
+        <button class="btn btn-success rounded-8">Approve</button>
     </div>
 
     <!-- <script>
