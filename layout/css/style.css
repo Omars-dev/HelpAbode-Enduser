@@ -93,7 +93,7 @@
 }
 
 .provider-basic-info {
-    margin-top: 90px;
+    margin-top: 106px;
 }
 
 .provider-basic-info .b-name img {
@@ -301,11 +301,7 @@ h2 {
 
 .status-card label {
     display: block;
-    margin-bottom: 8px;
-}
-
-.status-card button {
-    margin-top: 10px;
+    margin: 12px 0;
 }
 
 .status-msg {
